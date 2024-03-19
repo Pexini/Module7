@@ -40,7 +40,6 @@
 <br>
 <li> Статические методы: Используются для выполнения действий, не зависящих от конкретного экземпляра класса. Обычно используются для утилитарных операций. Пример:</li>
 <br>
-<br>
 <strong> public class MathUtils {
     public static int add(int a, int b) {
         return a + b;
@@ -51,6 +50,7 @@
 <br>
 
 <li>Статические классы: Используются для группировки связанных статических методов или констант. Пример: </li>
+<br>
 <strong> public class Constants {<br>
     public static final double PI = 3.14159;<br>
     public static final double SPEED_OF_LIGHT = 299792458;<br>
