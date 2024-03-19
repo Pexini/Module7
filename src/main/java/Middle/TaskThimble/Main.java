@@ -14,9 +14,10 @@ public class Main {
         int realNumber = thimble.showNumber();
         if (answer == realNumber) {
             player.increaseWinCounter();
+            System.out.println("Шарик был спрятан в наперске # " + realNumber);
             System.out.println("У вас баллов  " + player.getWinCounter());
         } else {
-            System.out.println("Извините, вы не угадали" + " Шарик был спрятан в наперстке № " + " " + thimble.showNumber());
+            System.out.println("Извините, вы не угадали" + " Шарик был спрятан в наперстке № " + " " + realNumber);
         }
 
     }
