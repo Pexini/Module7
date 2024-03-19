@@ -32,26 +32,25 @@
 <li>Статические поля (переменные): Используются для хранения общих данных для всех экземпляров класса. Пример: </li>
 <strong> public class Counter {
     public static int count = 0; 
-} </strong> 
+} </strong> <br>
 в коде:
-<h6> Counter.count++;</h6>
+<strong> Counter.count++;</strong>
 <br>
 
 <li> Статические методы: Используются для выполнения действий, не зависящих от конкретного экземпляра класса. Обычно используются для утилитарных операций. Пример:</li>
-<h6> public class MathUtils {
+<strong> public class MathUtils {
     public static int add(int a, int b) {
         return a + b;
     }
-}</h6> 
+}</strong> <br>
 в коде:
-<h6> int result = MathUtils.add(5, 3);</h6>
-<br>
+<strong> int result = MathUtils.add(5, 3);</strong><br>
 
 <li>Статические классы: Используются для группировки связанных статических методов или констант. Пример: </li>
-<h6> public class Constants {<br>
+<strong> public class Constants {<br>
     public static final double PI = 3.14159;<br>
     public static final double SPEED_OF_LIGHT = 299792458;<br>
-} </h6>
+} </strong>
 </ol>
 
 <h5> 6. В чем разница между статическим и нестатическим вложенными классами?: </h5>
