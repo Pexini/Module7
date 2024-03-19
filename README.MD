@@ -33,10 +33,10 @@
 <strong> public class Counter {
     public static int count = 0; 
 } </strong> <br>
-в коде:
+в коде:<br>
 <strong> Counter.count++;</strong>
 <br>
-
+<br>
 <li> Статические методы: Используются для выполнения действий, не зависящих от конкретного экземпляра класса. Обычно используются для утилитарных операций. Пример:</li>
 <strong> public class MathUtils {
     public static int add(int a, int b) {
