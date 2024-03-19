@@ -1,7 +1,7 @@
-package EasyStatic;
+package Easy.Statick;
 
 public class Main {
     public static void main(String[] args) {
-        Clock.ShowTime();
+        Clock.showTime();
     }
 }
