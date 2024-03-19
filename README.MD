@@ -43,7 +43,7 @@
         return a + b;
     }
 }</strong> <br>
-в коде:
+в коде:<br>
 <strong> int result = MathUtils.add(5, 3);</strong><br>
 <br>
 
