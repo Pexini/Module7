@@ -9,6 +9,7 @@ public class Main {
         Player player = new Player();
         while (!player.hasWon()) {
             System.out.println("Перед вами три наперстка, в одном из них спрятан шарик");
+            System.out.println(thimble.visionThimble());
             System.out.println("Введите номер наперстка, от 1 до 3 в котором как вы думаете спрятан шарик: ");
             int answer = scanner.nextInt();
             if (answer < 1 || answer > 3) {
