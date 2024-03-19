@@ -32,7 +32,7 @@
 <li>Статические поля (переменные): Используются для хранения общих данных для всех экземпляров класса. Пример: </li>
  <h6> public class Counter {
     public static int count = 0;
-} </h6> <br>
+} </h6> 
 в коде:
 <h6> Counter.count++;</h6>
 <br>
@@ -42,15 +42,15 @@
     public static int add(int a, int b) {
         return a + b;
     }
-}</h6> <br>
+}</h6> 
 в коде:
 <h6> int result = MathUtils.add(5, 3);</h6>
 <br>
 
 <li>Статические классы: Используются для группировки связанных статических методов или констант. Пример: </li>
-<h6> public class Constants {
-    public static final double PI = 3.14159;
-    public static final double SPEED_OF_LIGHT = 299792458;
+<h6> public class Constants {<br>
+    public static final double PI = 3.14159;<br>
+    public static final double SPEED_OF_LIGHT = 299792458;<br>
 } </h6>
 </ol>
 
