@@ -14,4 +14,7 @@ public class Player {
     public int getWinCounter() {
         return winCounter;
     }
+    public boolean hasWon(){
+        return  winCounter >=3;
+    }
 }
