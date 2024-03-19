@@ -45,6 +45,7 @@
 }</strong> <br>
 в коде:
 <strong> int result = MathUtils.add(5, 3);</strong><br>
+<br>
 
 <li>Статические классы: Используются для группировки связанных статических методов или констант. Пример: </li>
 <strong> public class Constants {<br>
