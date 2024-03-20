@@ -14,7 +14,7 @@ public class Frog {
     }
     @Override
     public String toString(){
-       return "Лягушка сдклала " + jumpCount + " прыжков";
+       return "Лягушка сделала " + jumpCount + " прыжков";
     }
 
 }
