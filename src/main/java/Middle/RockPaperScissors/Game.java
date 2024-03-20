@@ -12,13 +12,18 @@ public class Game {
     }
 
     public void startGame(Scanner scanner) {
-        int userChoice = scanner.nextInt();
+        int userChoice;
         do {
             System.out.println("Играем в игру “Камень-ножницы-бумага” : 0-камень, 1-ножницы, 2-бумага ");
             System.out.println("Введите значение от 0 до 2 ");
-        } while (userChoice < 0 || userChoice > 3);
+            userChoice = scanner.nextInt();
+            if (userChoice < 0 || userChoice > 2) {
+                System.out.println("Неккоректный ввод. Пожалуйста введите число от 0 до 2");
+            }
+        } while (userChoice < 0 || userChoice > 2);
 
-        player.setChoise(userChoice);
+
+        player.setChoice(userChoice);
         computer.generateChoice();
 
         int result = calculateResult();
