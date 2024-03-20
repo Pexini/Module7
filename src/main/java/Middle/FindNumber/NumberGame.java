@@ -7,28 +7,29 @@ public class NumberGame {
     private int maxAttempts;
     private int attempts;
 
-    public NumberGame (int maxAttempts){
+    public NumberGame(int maxAttempts) {
         this.maxAttempts = maxAttempts;
-        this.secretNumber = (int) (Math.random()*10) +1;
+        this.secretNumber = (int) (Math.random() * 10) + 1;
         this.attempts = maxAttempts;
     }
-    public void play(){
+
+    public void play() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Добро пожаловать в игру: Угадай число от 1 до 10");
 
-        while (attempts > 0){
+        while (attempts > 0) {
             System.out.println("Введите ваше предположение: ");
             int number = scanner.nextInt();
-            if (number == secretNumber){
+            if (number == secretNumber) {
                 System.out.println("Поздравляю вы угадали я загадал число " + secretNumber);
-            return;
-            }else if (number < secretNumber) {
+                return;
+            } else if (number < secretNumber) {
                 System.out.println("Извини, но мое число больше того что ты предположил, попробуй езе раз:");
-            }else {
+            } else {
                 System.out.println("Извини, но мое число меньше того что ты предположил, попробуй езе раз:");
 
             }
-            attempts --;
+            attempts--;
             System.out.println("У вас осталось " + attempts + " попыток");
 
         }
