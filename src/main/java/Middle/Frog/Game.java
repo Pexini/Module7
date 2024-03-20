@@ -17,14 +17,14 @@ public class Game {
             System.out.println("Игрок номер 1. Нажмите Enter - что бы бросить кубик");
             scanner.nextLine();
             player1.throwDice();
-            System.out.println( "На кости выпало число " + player1.);
+            System.out.println( "На кости выпало число " + player1.getLastRoll());
             System.out.println();
 
 
             System.out.println("Ход игрока под номером 2. Нажмите Enter - что бы бросить кубик");
             scanner.nextLine();
             player2.throwDice();
-            System.out.println( "На кости выпало число " + );
+            System.out.println( "На кости выпало число " +player2.getLastRoll());
             System.out.println();
 
             System.out.println("Текущее состояние: ");
@@ -32,10 +32,10 @@ public class Game {
             System.out.println("Игрок 2 " + frog2);
 
             if (frog1.getJumpCount() >= 30) {
-                System.out.println("Поздравляю Игрок 1 побудил. " + " Его лягушка первая сделала " + frog1);
+                System.out.println("Поздравляю Игрок 1 победил. " +  frog1);
                 break;
             } else if (frog2.getJumpCount() >= 30) {
-                System.out.println("Поздравляю Игрок 2 побудил. " + " Его лягушка первая сделала " + frog2);
+                System.out.println("Поздравляю Игрок 2 победил. " +  frog2);
                 break;
             }
         }
