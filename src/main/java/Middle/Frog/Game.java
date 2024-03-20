@@ -1,12 +1,20 @@
 package Middle.Frog;
 
+import java.util.Scanner;
+
 public class Game {
     public static void main(String[] args) {
-       do {
+        Scanner scanner = new Scanner(System.in);
+        Frog frog1 = new Frog();
+        Frog frog2 = new Frog();
 
-           System.out.println("Добро пожаловать в игру Лягушки. Каждый из вас должен по очереди бросать кубик и тот чья лягушка сделает 30 прыжков - Победил");
-           System.out.println("Начинает игру Игрок под номером 1 - кидайте кубик.");
-           System.out.println("Что бы бросить кубик - введите цифру 1");
-       }
-       }
+        Player player1 = new Player(frog1);
+        Player player2 = new Player(frog2);
+
+
+
+        while (true){
+            System.out.println("");
+        }
+    }
 }
