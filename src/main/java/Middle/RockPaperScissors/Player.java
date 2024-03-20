@@ -2,14 +2,14 @@ package Middle.RockPaperScissors;
 
 public class Player {
 
-    private int choise;
+    private int choice;
 
-    public void setChoise(int chouie) {
-        this.choise = choise;
+    public void setChoise(int choice) {
+        this.choice = choice;
     }
 
-    public int getChoise() {
-        return choise;
+    public int getChoice() {
+        return choice;
     }
 
 }

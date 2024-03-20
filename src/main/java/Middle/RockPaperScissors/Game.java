@@ -12,18 +12,23 @@ public class Game {
     }
 
     public void startGame(Scanner scanner) {
-        System.out.println("Играем в игру “Камень-ножницы-бумага” : 0-камень, 1-ножницы, 2-бумага ");
-        System.out.println("Выбери значение от 0 до 2 ");
         int userChoice = scanner.nextInt();
+        do {
+            System.out.println("Играем в игру “Камень-ножницы-бумага” : 0-камень, 1-ножницы, 2-бумага ");
+            System.out.println("Введите значение от 0 до 2 ");
+        } while (userChoice < 0 || userChoice > 3);
+
         player.setChoise(userChoice);
-        computer.generateChoise();
+        computer.generateChoice();
 
         int result = calculateResult();
+        displayResult(result);
     }
 
     private int calculateResult() {
-        int userChoice = player.getChoise();
+        int userChoice = player.getChoice();
         int computerChoice = computer.getChoice();
+
         if (userChoice == computerChoice) {
             return 0;
         } else if ((userChoice == 0 && computerChoice == 1) ||
@@ -38,11 +43,11 @@ public class Game {
 
     private void displayResult(int result) {
         if (result == 0) {
-            System.out.println("Ничья, я тоже загадал ");
+            System.out.println("Ничья");
         } else if (result == 1) {
-            System.out.println("Поздравляю ты выйграл, компьютер загадал ");
+            System.out.println("Поздравляю ты выйграл");
         } else {
-            System.out.println("Извини, ты проиграл, компьютер занадал ");
+            System.out.println("Извини, ты проиграл");
         }
         System.out.println("Выбор компьютера " + computer.getChoice());
     }

@@ -4,8 +4,8 @@ public class Computer {
 
     private int choice;
 
-    public void generateChoise() {
-        choice = (int) (Math.random()*3);
+    public void generateChoice() {
+        choice = (int) (Math.random()*2);
     }
 
     public int getChoice() {
