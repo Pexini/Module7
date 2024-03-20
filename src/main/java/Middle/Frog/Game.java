@@ -14,17 +14,15 @@ public class Game {
         System.out.println("Добро пожаловать в игру Лягушки. Каждый из вас должен по очереди бросать кубик и тот чья лягушка первой сделает 30 прыжков - Победил");
         System.out.println("Начинает игру Игрок под номером 1 - кидайте кубик.");
         while (true) {
-            System.out.println("Нажмите Enter - что бы бросить кубик");
+            System.out.println("Игрок номер 1. Нажмите Enter - что бы бросить кубик");
             scanner.nextLine();
             player1.throwDice();
-            System.out.println(frog1);
             System.out.println();
 
 
             System.out.println("Ход игрока под номером 2. Нажмите Enter - что бы бросить кубик");
             scanner.nextLine();
             player2.throwDice();
-            System.out.println(frog2);
             System.out.println();
 
             System.out.println("Текущее состояние: ");
