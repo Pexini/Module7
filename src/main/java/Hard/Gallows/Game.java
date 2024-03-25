@@ -19,7 +19,7 @@ public class Game {
         System.out.println();
         System.out.println();
         System.out.println();
-        System.out.println();  // это я дома играл с детьми, и что бы в консоле не было видно слово, добавил пробелов.
+        System.out.println();  // это я дома играл с детьми, и что бы в консоле не было видно загаданное слово, добавил пробелов.
         System.out.println();
         System.out.println();
         System.out.println();
