@@ -9,6 +9,7 @@ public class HangmanGame {
     private int errors;
     private Player player1;
     private Player player2;
+    private int counterWrongLetter;
 
     public HangmanGame(String word, Player player1, Player player2) {
         this.secretWord = word.toLowerCase();
@@ -17,6 +18,14 @@ public class HangmanGame {
         this.errors = 0;
         this.player1 = player1;
         this.player2 = player2;
+        this.counterWrongLetter = 0;
+    }
+    public int getCounterWrongLetter() {
+        return counterWrongLetter;
+    }
+
+    public void setCounterWrongLetter(int couter) {
+        this.counterWrongLetter = couter;
     }
 
     public boolean guessLetter(char letter) {
@@ -29,6 +38,7 @@ public class HangmanGame {
         }
         if (!found) {
             errors++;
+            counterWrongLetter++;
         }
         return found;
     }
