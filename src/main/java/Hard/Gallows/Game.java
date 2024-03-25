@@ -8,7 +8,7 @@ public class Game {
         Player player1 = new Player("Ведущий");
         Player player2 = new Player("Игрок");
 
-        System.out.println("Игрок 1, Загадайте слово : ");
+        System.out.println("Итак Ведущий, загадайте слово : ");
 
         String wordToGuess = scanner.nextLine();
         System.out.println();
@@ -24,18 +24,24 @@ public class Game {
         System.out.println();
         System.out.println();
         System.out.println();
+        System.out.println();
+        System.out.println();
+        System.out.println("Добрый день игрок - сегодня вам предстоит отгадать загаданное слово используя максимум 6 попыток.");
         HangmanGame hangmanGame = new HangmanGame(wordToGuess, player1, player2);
         DrawHangman drawHangman = new DrawHangman();
         while (!hangmanGame.isGameOver()) {
 
             System.out.println("Загаданное слово " + hangmanGame.getGuessedWord());
-            System.out.println("Правильно, введите следующую букву: ");
+            System.out.println("Введите букву: ");
+            System.out.println();
             char gues = scanner.nextLine().toLowerCase().charAt(0);
             boolean found = hangmanGame.guessLetter(gues);
             if (!found) {
                 System.out.println(" Ошибка ");
                 System.out.println();
                 drawHangman.drawNextPart(hangmanGame.getErrors());
+                System.out.println();
+
             }
         }
         if (hangmanGame.getErrors() >= 6) {
