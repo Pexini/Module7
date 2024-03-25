@@ -50,7 +50,7 @@ public class Game {
         if (hangmanGame.getErrors() >= 6) {
             System.out.println(player2.getName() + " Проиграл, загаданное слово: " + wordToGuess + " Количество ваших ошибок " + hangmanGame.getCounterWrongLetter());
         } else {
-            System.out.println("Поздравляю " + player2.getName() + " Вы, выйграли " + " Количество неверных попыток " + hangmanGame.getCounterWrongLetter());
+            System.out.println("Поздравляю " + player2.getName() + " Вы, выиграли " + " Количество неверных попыток " + hangmanGame.getCounterWrongLetter());
         }
         scanner.close();
     }
