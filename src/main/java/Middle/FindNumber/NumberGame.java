@@ -29,11 +29,11 @@ public class NumberGame {
                 System.out.println("Извини, но мое число меньше того что ты предположил, попробуй езе раз:");
 
             }
-            attempts--;
-            System.out.println("У вас осталось " + attempts + " попыток");
-
+            if (maxAttempts == Integer.MIN_VALUE) {
+                attempts--;
+                System.out.println("У вас осталось " + attempts + " попыток");
+            }
         }
         System.out.println("Извините, но вы проиграли. Загаданное число было " + secretNumber);
     }
-
 }
