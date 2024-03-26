@@ -4,13 +4,12 @@ import java.util.Scanner;
 
 public class NumberGame {
     private int secretNumber;
-    private int maxAttempts;
+
     private int attempts;
 
-    public NumberGame(int maxAttempts) {
-        this.maxAttempts = maxAttempts;
+    public NumberGame(int attempts) {
         this.secretNumber = (int) (Math.random() * 10) + 1;
-        this.attempts = maxAttempts;
+        this.attempts = attempts;
     }
 
     public void play() {
@@ -29,7 +28,7 @@ public class NumberGame {
                 System.out.println("Извини, но мое число меньше того что ты предположил, попробуй езе раз:");
 
             }
-            if (maxAttempts == Integer.MIN_VALUE) {
+            if (attempts == Integer.MIN_VALUE) {
                 attempts--;
                 System.out.println("У вас осталось " + attempts + " попыток");
             }
