@@ -1,13 +1,13 @@
-package Middle.FrogFigure;
+package Middle.RockScissersPaperWithFigure;
 
 
 public class Rock implements Figure {
     @Override
-    public int getType() {
+    public int getType(){
         return 0;
     }
 
-    @Override
+        @Override
     public boolean isWon(Figure opponent) {
         return opponent instanceof Scissors;
     }
