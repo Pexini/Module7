@@ -6,6 +6,5 @@ public interface Figure {
 
     int getType();
 
-    void getFigure(Scanner scanner);
-
+    boolean isWon (Figure opponent);
 }
